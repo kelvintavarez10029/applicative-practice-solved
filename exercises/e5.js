@@ -1,3 +1,4 @@
+// import { r } from "vitest/dist/index-5aad25c1.js";
 import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 5
@@ -6,6 +7,12 @@ import { data } from "../data/data";
 
 export function getPlanetsWithMassValue(data, number) {
   // Your code goes here...
+  let planets = data.planets.filter(planet => planet.mass.massValue >= number);
+  return planets.map(planet => planet.name);
+
+ 
+
+
 }
 
 

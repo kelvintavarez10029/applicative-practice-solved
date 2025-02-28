@@ -1,3 +1,4 @@
+// import { r } from "vitest/dist/index-5aad25c1.js";
 import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 11
@@ -7,6 +8,10 @@ import { data } from "../data/data";
 
 export function lowMoonsPlanets(data) {
   // Your code goes here...
+  return data.planets
+  .filter(planet => (planet.moonsCount || 0) < 10) 
+  .map(planet => planet.name);;
+
 }
 
 // === TEST YOURSELF ===

@@ -1,3 +1,4 @@
+// import { p } from "vitest/dist/index-5aad25c1.js";
 import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 4
@@ -6,7 +7,11 @@ import { data } from "../data/data";
 
 export function getPlanetsWithLowGravity(data) {
   // Your code goes here...
-}
+  let planets = data.planets.filter(planet => planet.gravity < 10);
+  return planets.map(planet => planet.name);
+  
+    }
+
 
 
 

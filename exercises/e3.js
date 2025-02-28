@@ -1,3 +1,4 @@
+// import { r } from "vitest/dist/index-5aad25c1.js";
 import { data } from "../data/data";
 
 // SPACE DATA EXERCISE 3
@@ -6,6 +7,7 @@ import { data } from "../data/data";
 
 export function getAllAverageTemperatures(data) {
   // Your code goes here...
+ return data.planets.map(planet => planet.avgTemp);
 }
 
 
